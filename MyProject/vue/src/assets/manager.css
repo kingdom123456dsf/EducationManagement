@@ -1,0 +1,106 @@
+/*左侧边栏*/
+.m-aside{
+    width:270px;
+    background-color: #39465C;
+    overflow: hidden;
+    min-height: 100vh;
+}
+/*侧边栏上面logo*/
+.m-sysName{
+    height:70px;
+    display:flex;
+    align-items: center;
+    padding-left: 20px;
+    border-bottom: 1px solid #4c5a73;
+}
+/*侧边栏上面的文字*/
+.m-nameText{
+    color: #e4e7e6;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+/*侧边栏菜单栏*/
+.el-menu{
+    background-color: #39465C;
+    border-right:none !important;
+}
+/*头部栏样式*/
+.el-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid gainsboro;
+    color: #333;
+    height: 70px !important;
+    line-height: 70px;
+}
+/* 右侧背景颜色*/
+.right-container{
+    background-color: #EFF3F6;
+    height: 100vh;
+}
+/*顶部居中*/
+.top-header{
+    font-size: 12px;
+    /*设置垂直居中 先display:flex;在设置垂直居中，水平居右*/
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+/*侧边栏菜单一级字体颜色*/
+.el-submenu__title{
+    color: #e9e9e9;
+}
+/*侧边栏菜单悬浮背景颜色*/
+.el-menu-item:hover, .el-submenu__title:hover {
+    background: rgba(92, 113, 147, 0.24);
+
+}
+/*侧边栏二级字体颜色*/
+.el-menu-item {
+    color: #e9e9e9;
+}
+/*二级菜单选中背景和颜色设置*/
+.el-menu-item.is-active {
+    color: #11cfd2;
+    font-size: 14px;
+    background: rgba(92, 113, 147, 0.24);
+}
+
+/* 主要内容区背景样式*/
+.tabble_ground{
+    width: 100%;
+    height:1000px;
+    padding:40px 40px;
+    background-color: white;
+    border-radius: 4px;
+}
+/*  表格模块名*/
+.moudle_name{
+    margin-bottom: 40px;font-size: 18px;font-weight: 530;
+}
+/*输入框和按钮的父盒子样式*/
+.input_button{
+    margin-bottom: 20px;
+    display: flex;
+}
+/*输入框父盒子样式*/
+.input_box{
+    flex: 10;
+    text-align: left;
+}
+/*按钮父盒子样式*/
+.button_box{
+    flex:2;
+    text-align: right
+}
+/*输入框样式*/
+.input_left{
+    width: 20%;
+    margin-right: 20px
+}
+/*按钮样式*/
+.button_right{
+    border-radius: 1px;
+    width: 100px;
+    text-align: center
+}

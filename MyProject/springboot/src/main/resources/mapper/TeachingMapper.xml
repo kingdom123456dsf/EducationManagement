@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.springboot.dao.TeachingDao">
+
+    <!--    sql语句-->
+    <select id="findBySearch" resultType="com.example.springboot.entity.Teaching">
+        select `teaching`.* from `teaching`
+
+        where 1 = 1
+        <if test="search != null and search.Tno != null and search.Tno != ''">
+            and `teaching`.`Tno` like concat ('%', #{search.Tno}, '%')
+        </if>
+
+    </select>
+
+</mapper>

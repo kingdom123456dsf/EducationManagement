@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.springboot.dao.MajorDao">
+
+    <!--    sql语句-->
+    <select id="findBySearch" resultType="com.example.springboot.entity.Major">
+        select `major`.* from `major`
+
+        where 1 = 1
+        <if test="search != null and search.Mno != null and search.Mno != ''">
+            and `major`.`Mno` like concat ('%', #{search.Mno}, '%')
+        </if>
+
+    </select>
+
+</mapper>
